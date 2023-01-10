@@ -1,5 +1,3 @@
-SUMBER : https://www.myphptutorials.com/tutorials/1540/tutorial-membuat-aplikasi-php-dengan-docker
-
 TUTORIAL MENJALANKAN DOCKER
 
 1. BUKA APLIKASI DOCKER
