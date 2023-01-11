@@ -6,7 +6,7 @@
     $var4 = true;
 
     //Cara menampilkan / menggunakan variabel
-    echo "Menampilkan Variabel : ".$var1." <- Seperti ini caranya";
+    echo "Menampilkan Variabel : $var1 <- Seperti ini caranya";
     
     //Jenis-Jenis Variabel
     echo "</br>";
@@ -26,4 +26,3 @@
     // Boolean
     echo "</br>";
     echo var_dump($var4);
-?>

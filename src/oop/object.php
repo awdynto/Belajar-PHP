@@ -9,5 +9,3 @@ $pisang = new Buah();
 $pisang->nama = "Pisang";
 
 echo $pisang->nama;
-
-?>

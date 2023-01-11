@@ -1,5 +1,6 @@
 <?php
-class Buah {
+class Buah
+{
   // Properties
   // Jenis Akses public, private, protected 
   // private $nama;
@@ -9,30 +10,35 @@ class Buah {
   public $warna;
 
   //Construct
-  function __construct($namaBaru, $warnaBaru) {
+  function __construct($namaBaru, $warnaBaru)
+  {
     $this->nama = $namaBaru;
     $this->warna = $warnaBaru;
   }
 
   // Methods
-  function aturWarna($warnaBaru) {
+  function aturWarna($warnaBaru)
+  {
     $this->warna = $warnaBaru;
   }
 
-  function tampilDeskripsi() {
+  function tampilDeskripsi()
+  {
     echo "Buah $this->nama berwarna $this->warna";
   }
 }
 
 // Pisang warisan dari Buah
-class Pisang extends Buah {
-    public function halo() {
-      echo "Halo Nama Saya $this->nama";
-    }
+class Pisang extends Buah
+{
+  public function halo()
+  {
+    echo "Halo Nama Saya $this->nama";
+  }
 }
 
 $pisang = new Pisang("Pisang", "Kuning");
 
 echo $pisang->nama;
+echo "<br />";
 echo $pisang->halo();
-?>
