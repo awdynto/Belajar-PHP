@@ -1,28 +1,23 @@
 <?php
-    $var1 = "Halo Dunia";
-    $var1 = "Halo Dunia Update";
-    $var2 = 30;
-    $var3 = 3.14;
-    $var4 = true;
+$var1 = "Afif"; //string
+$var2 = 30; //integer
+$var3 = 3.14; //float
+$var4 = false; //boolean
 
-    //Cara menampilkan / menggunakan variabel
-    echo "Menampilkan Variabel : $var1 <- Seperti ini caranya";
-    
-    //Jenis-Jenis Variabel
-    echo "</br>";
-    echo "</br>";
+echo "Selamat Datang di Aplikasi Kami $var1. Semoga Bermanfaat $var2 $var3";
 
-    // String 
-    echo var_dump($var1);
+echo "<br>";
 
-    // Integer 
-    echo "</br>";
-    echo var_dump($var2);
+echo var_dump($var1);
 
-    // Float
-    echo "</br>";
-    echo var_dump($var3);
+echo "<br>";
 
-    // Boolean
-    echo "</br>";
-    echo var_dump($var4);
+echo var_dump($var2);
+
+echo "<br>";
+
+echo var_dump($var3);
+
+echo "<br>";
+
+echo var_dump($var4);

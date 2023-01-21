@@ -1,44 +1,41 @@
 <?php
+
 class Buah
 {
-  // Properties
-  // Jenis Akses public, private, protected 
-  // private $nama;
-  // protected $nama;
-  public $nama;
 
-  public $warna;
+    private $nama; //hanya bisa diakses di kelasnya
+    // protected $nama; //hanya bisa diakses di kelasnya dan warisannya
+    // public $nama; //bisa diakses dimana aja
 
-  //Construct
-  function __construct($namaBaru, $warnaBaru)
-  {
-    $this->nama = $namaBaru;
-    $this->warna = $warnaBaru;
-  }
 
-  // Methods
-  function aturWarna($warnaBaru)
-  {
-    $this->warna = $warnaBaru;
-  }
+    function gantiNama($namaBaru)
+    {
+        $this->nama = $namaBaru;
 
-  function tampilDeskripsi()
-  {
-    echo "Buah $this->nama berwarna $this->warna";
-  }
+        echo $this->nama;
+    }
 }
 
-// Pisang warisan dari Buah
 class Pisang extends Buah
 {
-  public function halo()
-  {
-    echo "Halo Nama Saya $this->nama";
-  }
+
+    function gantiNama($namaBaru)
+    {
+        $this->nama = $namaBaru;
+    }
+
+    function tampilDeskripsi()
+    {
+        echo "<br /> Halo Saya $this->nama";
+    }
 }
 
-$pisang = new Pisang("Pisang", "Kuning");
+$pisang = new Buah();
+// $pisang->nama = "Pisang";
 
-echo $pisang->nama;
-echo "<br />";
-echo $pisang->halo();
+echo $pisang->gantiNama("Pisang");
+
+
+// $pisangBaru = new Pisang();
+// $pisangBaru->gantiNama("Pisang Baru");
+// $pisangBaru->tampilDeskripsi();

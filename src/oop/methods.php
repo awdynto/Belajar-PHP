@@ -1,27 +1,27 @@
 <?php
-class Buah {
-  // Properties
-  public $nama;
-  public $warna;
 
-  // Methods
-  function aturWarna($warnaBaru) {
-    $this->warna = $warnaBaru;
-  }
+class Buah
+{
 
-  function tampilDeskripsi() {
-    echo "Buah $this->nama berwarna $this->warna";
-  }
+    //property
+    public $nama;
+    public $warna;
+
+    //methods
+    function tampilDeskripsi()
+    {
+        echo "<br /> Nama Buah $this->nama dengan warna $this->warna";
+    }
 }
+
 
 $pisang = new Buah();
 $pisang->nama = "Pisang";
-$pisang->aturWarna('Kuning');
+$pisang->warna = "Kuning";
 
-echo $pisang->nama;
-echo "<br>";
+$mangga = new Buah();
+$mangga->nama = "Mangga";
+
 echo $pisang->warna;
-echo "<br>";
+echo "<br /> $mangga->nama";
 echo $pisang->tampilDeskripsi();
-
-?>

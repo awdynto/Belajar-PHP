@@ -1,33 +1,26 @@
 <?php
-class Buah {
-  // Properties
-  public $nama;
-  public $warna;
 
-  //Construct
-  function __construct($namaBaru, $warnaBaru) {
-    $this->nama = $namaBaru;
-    $this->warna = $warnaBaru;
-  }
+class Buah
+{
 
-  // Methods
-  function aturWarna($warnaBaru) {
-    $this->warna = $warnaBaru;
-  }
-
-  function tampilDeskripsi() {
-    echo "Buah $this->nama berwarna $this->warna";
-  }
+    //property
+    public $nama;
+    public $warna;
 }
 
-// Pisang warisan dari Buah
-class Pisang extends Buah {
-    public function halo() {
-      echo "Halo Nama Saya Pisang";
+//pewarisan
+class Pisang extends Buah
+{
+    function tampilDeskripsi()
+    {
+        echo "Halo Saya Buah $this->nama dengan warna $this->warna";
     }
 }
 
-$pisang = new Pisang("Pisang", "Kuning");
 
-echo $pisang->halo();
-?>
+$pisang = new Pisang();
+$pisang->nama = "Pisang";
+$pisang->warna = "Kuning";
+
+
+$pisang->tampilDeskripsi();

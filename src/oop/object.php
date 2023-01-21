@@ -1,11 +1,20 @@
 <?php
-class Buah {
-  // Properties
-  public $nama;
-  public $warna;
+
+class Buah
+{
+
+    //property
+    public $nama;
+    public $warna;
 }
+
 
 $pisang = new Buah();
 $pisang->nama = "Pisang";
+$pisang->warna = "Kuning";
 
-echo $pisang->nama;
+$mangga = new Buah();
+$mangga->nama = "Mangga";
+
+echo $pisang->warna;
+echo "<br /> $mangga->nama";

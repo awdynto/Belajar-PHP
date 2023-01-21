@@ -1,15 +1,23 @@
 <?php
+$a = 4;
+$b = 8;
 
-function tambahBilangan($a, $b) {
-    return $a + $b;
+function jumlahBilangan($var1, $var2)
+{
+    return $var1 + $var2;
 }
 
-function menampilkanKota($a) {
-    echo "Kota : $a";
+echo jumlahBilangan($a, $b);
+echo jumlahBilangan($a, $b);
+echo jumlahBilangan($a, $b);
+echo jumlahBilangan($a, $b);
+
+
+function menampilkanKota($kota)
+{
+    echo "<br /> Kota $kota";
 }
 
-echo tambahBilangan(5, 8);
-echo "<br />";
+
 menampilkanKota("Pekalongan");
-
-?>
+menampilkanKota("Semarang");

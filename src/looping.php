@@ -1,41 +1,42 @@
 <?php
-
-$kota = array("Pekalongan", "Semarang", "Jakarta");
-
-// ---------------
-//for
-
-// for (init counter; test counter; increment counter) {
+//pengulangan
+// for (deklarasi awal; syarat pengkondisian; format pengulangan) {
 //     code to be executed for each iteration;
 // }  
 
-for ($x = 0; $x <= 10; $x++) {
-    echo "The number is: $x <br>";
+// for ($x = 1; $x <= 10; $x++) {
+//     echo "$x. Saya tidak akan mengulangi perbuatan itu lagi <br />";
+// }
+
+// echo "<br />";
+
+// for ($x = 10; $x >= 1; $x--) {
+//     echo "$x. Saya tidak akan mengulangi perbuatan itu lagi <br />";
+// }
+
+// echo "<br />";
+
+$kota = array('Pekalongan', 'Semarang', 'Demak');
+
+// echo "1. Kota $kota[0] <br>";
+// echo "2. Kota $kota[1] <br>";
+// echo "3. Kota $kota[2] <br>";
+// echo count($kota);
+
+for ($x = 0; $x < count($kota); $x++) {
+    echo ($x + 1) . ". Kota $kota[$x] <br>";
 }
 
-echo "<br />";
-
-for ($index = 0; $index <= count($kota)-1; $index++) {
-    echo "Kota : $kota[$index] <br>";
+$nomor = 1;
+foreach ($kota as $kotaDetail) {
+    echo $nomor++ . ". Kota $kotaDetail <br />";
 }
 
-// ---------------
-//foreach
-
-echo "<br />";
-foreach ($kota as $value) {
-    echo "Kota : $value <br>";
-}
-
-echo "<br />";
-foreach ($kota as $value) {
-    if($value == "Pekalongan") {
-        echo "- <br>";
-    }else {
-        echo "Kota : $value <br>";
+$nomor = 1;
+foreach ($kota as $kotaDetail) {
+    if ($kotaDetail == "Semarang") {
+        echo "- <br/>";
+    } else {
+        echo $nomor++ . ". Kota $kotaDetail <br />";
     }
 }
-
-
-
-?>

@@ -1,30 +1,21 @@
 <?php
-class Buah {
-  // Properties
-  public $nama;
-  public $warna;
 
-  //Construct
-  function __construct($namaBaru, $warnaBaru) {
-    $this->nama = $namaBaru;
-    $this->warna = $warnaBaru;
-  }
+class Buah
+{
 
-  // Methods
-  function aturWarna($warnaBaru) {
-    $this->warna = $warnaBaru;
-  }
+    //property
+    public $nama;
+    public $warna;
 
-  function tampilDeskripsi() {
-    echo "Buah $this->nama berwarna $this->warna";
-  }
+    // function __construct($a, $b)
+    // {
+    //     $this->nama = $a;
+    //     $this->warna = $b;
+    // }
 }
 
 $pisang = new Buah("Pisang", "Kuning");
 
-echo $pisang->nama;
-echo "<br>";
 echo $pisang->warna;
-echo "<br>";
-echo $pisang->tampilDeskripsi();
-?>
+echo "<br />";
+echo $pisang->nama;

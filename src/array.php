@@ -1,8 +1,8 @@
 <?php
-$kota = array("Pekalongan", "Semarang", "Jakarta");
-echo "Saya pernah tinggal di $kota[0] $kota[1] and $kota[2]";
+$kota = array('Pekalongan', 'Semarang', 'Demak');
 
-echo "<br />";
+echo "Saya pernah tinggal di Kota $kota[0], Kota $kota[1], dan Kota $kota[2] ";
 
-$age = array("Afif" => "35", "Eko" => "37", "Budi" => "43");
-echo "Afif berusia " . $age['Afif'] . " tahun";
+$umurKota = array("Pekalongan" => "400", "Semarang" => "500", "Demak" => "200");
+
+echo "<br /> Berikut umur Kota $kota[0] : " . $umurKota['Pekalongan'] . " tahun";
